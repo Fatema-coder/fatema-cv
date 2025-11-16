@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwindcss</title>
+  <link rel="stylesheet" href="./public/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-r from-pink-50 to-fuchsia-100">
+
+<!-- nav-part -->
+  <header class="flex justify-between items-center px-10 fixed top-0 z-50 w-full bg-gradient-to-r from-pink-50 to-fuchsia-100">
+    <h1 class="p-4 text-xl font-bold">My Portfolio</h1>
+    <nav>
+      <ul class="flex gap-9">
+        <li><a href="#home" class="hover:text-fuchsia-600">Home</a></li>
+        <li><a href="#skills" class="hover:text-fuchsia-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-fuchsia-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-fuchsia-600">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="m-4 bg-fuchsia-700 text-white rounded-4xl hover:bg-fuchsia-400 text-sm font-bold">
+      <button class="px-8 py-2">Download CV</button>
+    </div>
+  </header>
+
+  <!-- body-part -->
+  <main class="px-8 pt-16">
+    <!-- page-1 -->
+    <section id="home" class="flex items-center justify-between pt-35">
+      
+    
+      <div class="relative bg-transparent bg-cover bg-center bg-no-repeat h-[400px] w-[480px]"
+           style="background-image: url('src/images/strokes.png');">
+        <div class="relative z-10 px-8 pt-10">
+          <h1 class="text-4xl font-bold">Fatima Suraj</h1>
+          <p class="pt-4 text-gray-600">
+            I’m passionate about crafting responsive, modern web experiences and continuously learning new technologies to grow as a developer.
+          </p>
+          <article class="pt-2 text-fuchsia-950 font-bold hover:text-fuchsia-600">
+            <p>💻 Frontend Developer / Learner</p>
+            <p>"Building modern websites with Tailwind & React."</p>
+          </article>
+          <div class="flex gap-12 pt-3">
+            <a href="#projects" class="bg-fuchsia-700 text-white rounded-full px-6 py-2 text-sm font-bold hover:bg-fuchsia-400">
+              View Projects
+            </a>
+            <a href="#contact" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="ml-7 relative bg-transparent bg-cover bg-center bg-no-repeat w-[360px]" style="background-image: url('src/images/flower.png')">
+        <div class="w-90 h-90 rounded-full overflow-hidden shadow-xl">
+          <img src="src/images/me.png" alt="Fatima Suraj" class="w-full h-full object-cover ">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- page-2 -->
+    <section id="skills" class="pt-30">
+
+     <h1 class="font-bold text-2xl flex justify-center mb-15">My Skills</h1>
+
+     <div class="max-w-3xl mx-auto space-y-8">
+      <!-- html -->
+      <div class="space-y-2 ">
+        <div class="flex items-center gap-3">
+            <i class="fa-brands fa-html5"></i>
+          <span class="flex-1 font-medium">HTML</span>
+          <span class="font-medium">90%</span>
+        </div>
+        <div class="w-full h-2.5 rounded-full bg-gray-200">
+          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:90%"></div>
+        </div>
+      </div>
+      <!-- css -->
+        <div class="space-y-2 ">
+        <div class="flex items-center gap-3">
+            <i class="fa-brands fa-css3-alt"></i>
+          <span class="flex-1 font-medium">CSS</span>
+          <span class="font-medium">75%</span>
+        </div>
+        <div class="w-full h-2.5 rounded-full bg-gray-200">
+          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:75%"></div>
+        </div>
+      </div>
+      <!-- js -->
+      <div class="space-y-2 ">
+        <div class="flex items-center gap-3">
+           <i class="fa-brands fa-js"></i>
+          <span class="flex-1 font-medium">JS</span>
+          <span class="font-medium">50%</span>
+        </div>
+        <div class="w-full h-2.5 rounded-full bg-gray-200">
+          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:50%"></div>
+        </div>
+      </div>
+      <!-- libraries -->
+      <h1 class="font-bold text-center text-xl">Libraries</h1>
+      <!-- reactjs -->
+      <div class="space-y-2 ">
+        <div class="flex items-center gap-3">
+           <i class="fa-brands fa-react"></i>
+          <span class="flex-1 font-medium">ReactJS</span>
+          <span class="font-medium">90%</span>
+        </div>
+        <div class="w-full h-2.5 rounded-full bg-gray-200">
+          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:90%"></div>
+        </div>
+      </div>
+    <!-- tailwindcss -->
+       <div class="space-y-2 ">
+        <div class="flex items-center gap-3">
+          <span class="flex-1 font-medium">Tailwindcss</span>
+          <span class="font-medium">60%</span>
+        </div>
+        <div class="w-full h-2.5 rounded-full bg-gray-200">
+          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:60%"></div>
+        </div>
+      </div>
+     </div>
+   </section>
+ <!-- page-3 -->
+    <section id="projects" class="pt-30">
+      <!-- project-1 -->
+      <h1 class="text-center font-bold text-2xl">My Projects</h1>
+      <p class="text-center text-gray-700 pt-2 mb-4">A few projects I've built recently.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-20 py-20">
+
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-10 hover:scale-105 transition">
+          <img src="src/images/project1.png" alt="Birthday Remainder" class="rounded-lg mb-3">
+          <h3 class="text-center mb-3 font-bold text-gray-900">A Birthday Remainder App</h3>
+          <p class="text-center font-bold text-gray-700">A React + Tailwind app that helps you keep track of friends’ birthdays</p>
+          <div class="flex gap-20 justify-center pt-3">
+            <a href="https://react-birthday-list.vercel.app/" target="_blank" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600">Demo</a>
+            <a href="https://github.com/Fatema-coder/react-birthday-list" target="_blank" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600">Code</a>
+          </div>
+        </div>
+        <!-- project-2 -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-5 hover:scale-105 transition">
+          <img src="src/images/project2.png" alt="Personal Portfolio" class="rounded-lg mb-3">
+          <h3 class="text-center mb-3 font-bold text-gray-900">Personal Portfolio</h3>
+          <p class="text-center font-bold text-gray-700"> My own portfolio website built using Tailwind CSS and HTML5, showcasing my work and skills.</p>
+          <div class="flex justify-center pt-3">
+            <a href="#" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600">code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- page-4 -->
+    <section id="contact" class="py-30 flex flex-col items-center">
+      <h1 class="font-bold text-2xl text-fuchsia-950">Contact Me!</h1>
+      <p class="text-center text-gray-700 pt-5">I’d love to hear from you! Whether it’s a project idea, a collaboration, or just a hello — feel free to reach out.</p>
+      <div class="flex flex-col sm:flex-row gap-4 pt-5">
+        <a href="mailto:fatemasuraj95@gmail.com" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600" target="_blank">Email</a>
+        <a href="https://github.com/Fatema-coder" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600" target="_blank">Github</a>
+  <script>
+   let scrollTimer;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+    header.classList.add('shadow-md', 'bg-white');
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function() {
+        header.classList.remove('shadow-md', 'bg-white');
+    }, 300);
+});
+</script>
+</body>
+</html>

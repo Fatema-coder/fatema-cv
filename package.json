@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/styles.css",
+    "dev": "concurrently -k \"npm:dev:css\" \"live-server --watch=public,src,index.html --port=5173\""
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.14"
+  }
+}
