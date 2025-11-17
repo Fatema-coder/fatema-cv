@@ -6,8 +6,6 @@ It showcases my skills, projects, education, and experience in a clean and moder
 ### 🔗 Live Preview
 👉 **https://fatema-suraj.github.io/fatema-cv/**
 
-*(This link works after enabling GitHub Pages — steps below!)*
-
 ---
 
 ## ✨ Features
