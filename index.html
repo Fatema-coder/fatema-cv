@@ -14,13 +14,13 @@
     <h1 class="p-4 text-xl font-bold">My Portfolio</h1>
     <nav>
       <ul class="flex gap-9">
-        <li><a href="#home" class="hover:text-fuchsia-600">Home</a></li>
-        <li><a href="#skills" class="hover:text-fuchsia-600">Skills</a></li>
-        <li><a href="#projects" class="hover:text-fuchsia-600">Projects</a></li>
-        <li><a href="#contact" class="hover:text-fuchsia-600">Contact</a></li>
+        <li><a href="#home" class="nav-link-color">Home</a></li>
+        <li><a href="#skills" class="nav-link-color">Skills</a></li>
+        <li><a href="#projects" class="nav-link-color">Projects</a></li>
+        <li><a href="#contact" class="nav-link-color">Contact</a></li>
       </ul>
     </nav>
-    <div class="m-4 bg-fuchsia-700 text-white rounded-4xl hover:bg-fuchsia-400 text-sm font-bold">
+    <div class=" bg-fuchsia-700 text-white rounded-4xl hover:bg-fuchsia-400 text-sm font-bold">
       <button class="px-8 py-2">Download CV</button>
     </div>
   </header>
@@ -46,7 +46,7 @@
             <a href="#projects" class="bg-fuchsia-700 text-white rounded-full px-6 py-2 text-sm font-bold hover:bg-fuchsia-400">
               View Projects
             </a>
-            <a href="#contact" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600">
+            <a href="#contact" class="btn-link-color">
               Contact Me
             </a>
           </div>
@@ -70,58 +70,58 @@
      <div class="max-w-3xl mx-auto space-y-8">
       <!-- html -->
       <div class="space-y-2 ">
-        <div class="flex items-center gap-3">
+        <div class="skill-layout">
             <i class="fa-brands fa-html5"></i>
-          <span class="flex-1 font-medium">HTML</span>
+          <span class="skill-name">HTML</span>
           <span class="font-medium">90%</span>
         </div>
-        <div class="w-full h-2.5 rounded-full bg-gray-200">
-          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:90%"></div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width:90%"></div>
         </div>
       </div>
       <!-- css -->
         <div class="space-y-2 ">
-        <div class="flex items-center gap-3">
+        <div class="skill-layout">
             <i class="fa-brands fa-css3-alt"></i>
-          <span class="flex-1 font-medium">CSS</span>
+          <span class="skill-name">CSS</span>
           <span class="font-medium">75%</span>
         </div>
-        <div class="w-full h-2.5 rounded-full bg-gray-200">
-          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:75%"></div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width:75%"></div>
         </div>
       </div>
       <!-- js -->
       <div class="space-y-2 ">
-        <div class="flex items-center gap-3">
+        <div class="skill-layout">
            <i class="fa-brands fa-js"></i>
-          <span class="flex-1 font-medium">JS</span>
+          <span class="skill-name">JS</span>
           <span class="font-medium">50%</span>
         </div>
-        <div class="w-full h-2.5 rounded-full bg-gray-200">
-          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:50%"></div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width:50%"></div>
         </div>
       </div>
       <!-- libraries -->
       <h1 class="font-bold text-center text-xl">Libraries</h1>
       <!-- reactjs -->
       <div class="space-y-2 ">
-        <div class="flex items-center gap-3">
+        <div class="skill-layout">
            <i class="fa-brands fa-react"></i>
-          <span class="flex-1 font-medium">ReactJS</span>
+          <span class="skill-name">ReactJS</span>
           <span class="font-medium">90%</span>
         </div>
-        <div class="w-full h-2.5 rounded-full bg-gray-200">
-          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:90%"></div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width:90%"></div>
         </div>
       </div>
     <!-- tailwindcss -->
        <div class="space-y-2 ">
-        <div class="flex items-center gap-3">
-          <span class="flex-1 font-medium">Tailwindcss</span>
+        <div class="skill-layout">
+          <span class="skill-name">Tailwindcss</span>
           <span class="font-medium">60%</span>
         </div>
-        <div class="w-full h-2.5 rounded-full bg-gray-200">
-          <div class="bg-fuchsia-600 rounded-full h-2.5" style="width:60%"></div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width:60%"></div>
         </div>
       </div>
      </div>
@@ -131,15 +131,15 @@
       <!-- project-1 -->
       <h1 class="text-center font-bold text-2xl">My Projects</h1>
       <p class="text-center text-gray-700 pt-2 mb-4">A few projects I've built recently.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-20 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-20 py-10">
 
         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-10 hover:scale-105 transition">
           <img src="src/images/project1.png" alt="Birthday Remainder" class="rounded-lg mb-3">
           <h3 class="text-center mb-3 font-bold text-gray-900">A Birthday Remainder App</h3>
           <p class="text-center font-bold text-gray-700">A React + Tailwind app that helps you keep track of friends’ birthdays</p>
           <div class="flex gap-20 justify-center pt-3">
-            <a href="https://react-birthday-list.vercel.app/" target="_blank" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600">Demo</a>
-            <a href="https://github.com/Fatema-coder/react-birthday-list" target="_blank" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600">Code</a>
+            <a href="https://react-birthday-list.vercel.app/" target="_blank" class="btn-link-color">Demo</a>
+            <a href="https://github.com/Fatema-coder/react-birthday-list" target="_blank" class="btn-link-color">Code</a>
           </div>
         </div>
         <!-- project-2 -->
@@ -148,7 +148,7 @@
           <h3 class="text-center mb-3 font-bold text-gray-900">Personal Portfolio</h3>
           <p class="text-center font-bold text-gray-700"> My own portfolio website built using Tailwind CSS and HTML5, showcasing my work and skills.</p>
           <div class="flex justify-center pt-3">
-            <a href="#" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600">code</a>
+            <a href="#" class="btn-link-color">code</a>
           </div>
         </div>
       </div>
@@ -159,8 +159,8 @@
       <h1 class="font-bold text-2xl text-fuchsia-950">Contact Me!</h1>
       <p class="text-center text-gray-700 pt-5">I’d love to hear from you! Whether it’s a project idea, a collaboration, or just a hello — feel free to reach out.</p>
       <div class="flex flex-col sm:flex-row gap-4 pt-5">
-        <a href="mailto:fatemasuraj95@gmail.com" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600" target="_blank">Email</a>
-        <a href="https://github.com/Fatema-coder" class="border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600" target="_blank">Github</a>
+        <a href="mailto:fatemasuraj95@gmail.com" class="btn-link-color" target="_blank">Email</a>
+        <a href="https://github.com/Fatema-coder" class="btn-link-color" target="_blank">Github</a>
   <script>
    let scrollTimer;
 const header = document.querySelector('header');

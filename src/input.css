@@ -3,7 +3,23 @@
 html{
     scroll-behavior: smooth;
 }
-
-.flwr{
-    background-image: url("../images/flower.png");
+@layer components{
+    .nav-link-color{
+        @apply hover:text-fuchsia-600;
+    }
+    .btn-link-color{
+        @apply border-4 border-fuchsia-800 rounded-full px-6 py-1 text-sm font-bold hover:text-fuchsia-600; 
+    }
+    .skill-bar{
+        @apply w-full h-2.5 rounded-full bg-gray-200;
+    }
+    .skill-bar-fill{
+        @apply bg-fuchsia-600 rounded-full h-2.5;
+    }
+    .skill-layout{
+        @apply flex items-center gap-3;
+    }
+    .skill-name{
+        @apply flex-1 font-medium;
+    }
 }
