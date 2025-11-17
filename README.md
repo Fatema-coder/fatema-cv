@@ -4,7 +4,7 @@ This repository contains my personal CV website built using **HTML, CSS, and Jav
 It showcases my skills, projects, education, and experience in a clean and modern layout.
 
 ### 🔗 Live Preview
-👉 **https://fatema-suraj.github.io/fatema-cv/**
+👉 ** https://fatema-coder.github.io/fatema-cv/**
 
 ---
 
