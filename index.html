@@ -4,8 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwindcss</title>
+  <link rel="stylesheet" href="print.css" media="print">
   <link rel="stylesheet" href="./public/styles.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <style>
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
+</style>
 </head>
 <body class="bg-gradient-to-r from-pink-50 to-fuchsia-100">
 
@@ -24,11 +31,11 @@
       </ul>
     </nav>
 
-    <div>
-      <button class="bg-fuchsia-700 text-white px-6 py-2 rounded-full hover:bg-fuchsia-400 text-sm font-bold">
-        Download CV
-      </button>
-    </div>
+<a href="public/cv.pdf"
+   download="Fatema_Suraj_CV.pdf"
+   class="bg-fuchsia-700 text-white px-6 py-2 rounded-full hover:bg-fuchsia-400 text-sm font-bold transition-colors">
+  Download CV
+</a>
 
   </div>
 </header>
