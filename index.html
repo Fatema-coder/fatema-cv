@@ -10,23 +10,31 @@
 <body class="bg-gradient-to-r from-pink-50 to-fuchsia-100">
 
 <!-- nav-part -->
-  <header class="flex justify-between items-center px-10 fixed top-0 z-50 w-full bg-gradient-to-r from-pink-50 to-fuchsia-100">
-    <h1 class="p-4 text-xl font-bold">My Portfolio</h1>
+  <header class="w-full bg-gradient-to-r from-pink-50 to-fuchsia-100">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-4 gap-3">
+
+    <h1 class="text-xl font-bold">My Portfolio</h1>
+
     <nav>
-      <ul class="flex gap-9">
+      <ul class="flex flex-wrap justify-center md:justify-end gap-5 text-sm md:text-base">
         <li><a href="#home" class="nav-link-color">Home</a></li>
         <li><a href="#skills" class="nav-link-color">Skills</a></li>
         <li><a href="#projects" class="nav-link-color">Projects</a></li>
         <li><a href="#contact" class="nav-link-color">Contact</a></li>
       </ul>
     </nav>
-    <div class=" bg-fuchsia-700 text-white rounded-4xl hover:bg-fuchsia-400 text-sm font-bold">
-      <button class="px-8 py-2">Download CV</button>
+
+    <div>
+      <button class="bg-fuchsia-700 text-white px-6 py-2 rounded-full hover:bg-fuchsia-400 text-sm font-bold">
+        Download CV
+      </button>
     </div>
-  </header>
+
+  </div>
+</header>
 
   <!-- body-part -->
-  <main class="px-8 pt-16">
+  <main class="px-4 md:px-8 md:pt-16">
     <!-- page-1 -->
     <section id="home" class="flex items-center justify-between pt-35">
       
