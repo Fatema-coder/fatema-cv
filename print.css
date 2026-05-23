@@ -1,16 +1,39 @@
 /* Reset positioning for print */
 @media print {
+  /* Hide the entire header and navigation */
+  header, footer, nav, .no-print, 
+  /* Target the specific header element */
+  .header-container,
+  /* Add any other classes/IDs used in your header */
+  [class*="header"],
+  [id*="header"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
+  }
+
+  /* Reset body to remove any header space */
+  body {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* Make sure content starts at the top */
+  main, .content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Keep your existing styles */
   body * {
     position: static !important;
     transform: none !important;
   }
   
-  /* Hide unnecessary elements */
-  header, footer, nav, .no-print {
-    display: none !important;
-  }
-  
-  /* Ensure content takes full width */
   .container, section {
     width: 100% !important;
     max-width: 100% !important;
@@ -18,7 +41,6 @@
     margin: 0 !important;
   }
   
-  /* Force background colors (optional) */
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
